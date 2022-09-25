@@ -1,0 +1,32 @@
+:root{
+    --color-light: #fff;
+    --color-dark: #333;
+
+    --bg-dark: #353a40;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+img{
+    width: 25%;
+    height: 50%
+}
+.navbar{
+    padding: 0 3rem !important;
+}
+.bg-img{
+    position: relative;
+    background-image: url( /imagenes/ba1.jpg);
+    background-color: #555;
+    height: 40rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.color-light{
+    color: var(--color-light);
+}
+.bg-custom-dark{
+    background-color: var(--bg-dark);
+}
