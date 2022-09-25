@@ -22,7 +22,7 @@ img{
 .bg-img{
     position: relative;
     background-color: #555;
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%),url( /imagenes/ba1.jpg); 
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%),url(imagenes/ba1.jpg); 
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -30,7 +30,7 @@ img{
 .bg-img-honolulu{
     position: relative;
     background-color: #555;
-    background-image: url( /imagenes/honolulu.jpg); 
+    background-image: url(imagenes/honolulu.jpg); 
     background-position: end;
     background-repeat: no-repeat;
     background-size: cover;
