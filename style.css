@@ -15,9 +15,15 @@ img{
 .navbar{
     padding: 0 3rem !important;
 }
-.padding-0{
-    padding-right:0 !important;
-    padding-left:0 !important;
+.activePage a {
+	color: #fff !important
+}
+.subtitle{
+    font-size: 12px;
+}
+.dotted-underline{
+    text-decoration: underline;
+    text-decoration-style: dotted;
 }
 .bg-img{
     position: relative;
