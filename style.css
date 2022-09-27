@@ -3,6 +3,8 @@
     --color-dark: #333;
 
     --bg-dark: #353a40;
+    --bg-gradient-start: #1c3643;
+    --bg-gradient-end: #1d5271;
 }
 *{
     margin: 0;
@@ -14,9 +16,6 @@ img{
 }
 .navbar{
     padding: 0 3rem !important;
-}
-.activePage a {
-	color: #fff !important
 }
 .subtitle{
     font-size: 12px;
@@ -45,6 +44,17 @@ img{
 .color-light{
     color: var(--color-light);
 }
+.activePage a {
+	color: var(--color-light) !important;
+}
+.btn-custom-color{
+    background: #96c93e!important;
+    color: var(--color-light)!important;
+}
 .bg-custom-dark{
     background-color: var(--bg-dark);
+}
+.bg-custom-gradient{
+    background: var(--bg-gradient-start);
+    background: linear-gradient(90deg, var(--bg-gradient-start) 35%, var(--bg-gradient-end) 100%);
 }
