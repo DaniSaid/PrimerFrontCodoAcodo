@@ -10,20 +10,17 @@
     margin: 0;
     padding: 0;
 }
-img{
+img.icon{
     width: 25%;
     height: 50%
-}
-.navbar{
-    padding: 0 3rem !important;
 }
 .subtitle{
     font-size: 12px;
 }
-.dotted-underline{
-    text-decoration: underline;
-    text-decoration-style: dotted;
+.navbar{
+    padding: 0 3rem !important;
 }
+
 .bg-img{
     position: relative;
     background-color: #555;
@@ -32,6 +29,7 @@ img{
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 .bg-img-honolulu{
     position: relative;
     background-color: #555;
@@ -41,20 +39,33 @@ img{
     background-size: cover;
     height: 25rem;
 }
-.color-light{
-    color: var(--color-light);
-}
+
+
 .activePage a {
 	color: var(--color-light) !important;
 }
+
+/*color de fondo de la barra de navegación*/
+.bg-custom-dark{
+    background-color: var(--bg-dark);
+}
+
+/*color verde lima botón del formulario*/
 .btn-custom-color{
     background: #96c93e!important;
     color: var(--color-light)!important;
 }
-.bg-custom-dark{
-    background-color: var(--bg-dark);
-}
+
+/*color de fondo del footer*/
 .bg-custom-gradient{
     background: var(--bg-gradient-start);
     background: linear-gradient(90deg, var(--bg-gradient-start) 35%, var(--bg-gradient-end) 100%);
 }
+
+.carousel-inner { 
+    height: 80vh;
+ }
+
+ .carousel-item  { 
+    height: 100%;
+ }
