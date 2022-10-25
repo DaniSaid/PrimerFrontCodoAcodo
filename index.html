@@ -24,7 +24,7 @@
                   <div id="links">
                     <ul class="navbar-nav">
                       <li class="nav-item active current activePage">
-                        <a class="nav-link" href="#">La conferencia</a>
+                        <a class="nav-link" href="index.html">La conferencia</a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link link-secondary" href="#">Los oradores</a>
@@ -36,7 +36,7 @@
                         <a class="nav-link link-secondary" href="#">Conviértete en orador</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link link-success" href="#">Comprar tickets</a>
+                        <a class="nav-link link-success" href="venta.html">Comprar tickets</a>
                       </li>
                     </ul>
                   </div>
@@ -126,37 +126,15 @@
             </div>
           </section>
          
-          <!-- version sin carousel
-          <section class="jumbotron container-fluid bg-img">
-            <div  class="py-5 text-end text-white container">
-              <div class="row my-4 py-5">
-                <div class="col-lg-6"></div>
-                <div class="col-lg-6">
-                  <h2 class="text-capitalize ">conf bs as</h2>
-                  <p>
-                    Bs As llega por primera vez a Argentina. Un evento para compartir con
-                    nuestra comunidad el conocimiento y experiencia de los expertos que
-                    están creando el futuro de Internet Ven a conocer a miembros del
-                    evento, a otros estudiantes de Codo a Codo y los oradores de primer
-                    nivel que tenemos para ti. Te esperamos!
-                  </p>
-                  <button type="button" class="btn btn-outline-light">Quiero ser orador</button>
-                  <button type="button" class="btn btn-success">Comprar tickets</button>
-                </div>
-              </div>
-            </div>
-          </section>
-         -->
-
-          <!--grupo de tarjetas-->
           <section class="container my-2">
             <p class="text-muted text-uppercase text-center subtitle my-0">conoce a los</p>
             <h2 class="text-uppercase text-center">oradores</h2>
-            <div class="card-group gap-4">
-              <div class="card">
-                <img class="card-img-top" src="imagenes/steve.jpg" alt="imagen Steve Jobs">
-                <div class="card-body">
-                  <span class="badge text-bg-warning">JavaScript</span>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+              <div class="col">
+                <div class="card h-100">
+                  <img class="card-img-top" src="imagenes/steve.jpg" alt="imagen Steve Jobs">
+                  <div class="card-body">
+                    <span class="badge text-bg-warning">JavaScript</span>
                   <span class="badge text-bg-info text-white">React</span>
                   <h5 class="card-title">Card title</h5>
                   <p class="card-text">
@@ -164,12 +142,17 @@
                      Sapiente explicabo animi quasi voluptate facere vero provident soluta corporis
                       vel qui molestiae numquam iste necessitatibus, quia unde dignissimos repellat totam error.
                   </p>
+                  </div>
+                  <div class="card-footer">
+                    <!-- <small class="text-muted">Last updated 3 mins ago</small> -->
+                  </div>
                 </div>
               </div>
-              <div class="card">
-                <img class="card-img-top" src="imagenes/bill.jpg" alt="imagen Bill Gates">
-                <div class="card-body">
-                  <span class="badge text-bg-warning">JavaScript</span>
+              <div class="col">
+                <div class="card h-100">
+                  <img class="card-img-top" src="imagenes/bill.jpg" alt="imagen Bill Gates">
+                  <div class="card-body">
+                    <span class="badge text-bg-warning">JavaScript</span>
                   <span class="badge text-bg-info text-white">React</span>
                   <h5 class="card-title">Card title</h5>
                   <p class="card-text">
@@ -177,19 +160,28 @@
                      Sapiente explicabo animi quasi voluptate facere vero provident soluta corporis
                       vel qui molestiae numquam iste necessitatibus, quia unde dignissimos repellat totam error.
                   </p>
+                  </div>
+                  <div class="card-footer">
+                    <!-- <small class="text-muted">Last updated 3 mins ago</small> -->
+                  </div>
                 </div>
               </div>
-              <div class="card">
-                <img class="card-img-top" src="imagenes/ada.jpeg" alt="imagen Ada Lovelace">
-                <div class="card-body">
-                  <span class="badge text-bg-secondary">Negocios</span>
-                  <span class="badge text-bg-danger">Startups</span>
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                     Sapiente explicabo animi quasi voluptate facere vero provident soluta corporis
-                      vel qui molestiae numquam iste necessitatibus, quia unde dignissimos repellat totam error.
-                  </p>
+              <div class="col">
+                <div class="card h-100">
+                  <img class="card-img-top" src="imagenes/ada.jpeg" alt="imagen Ada Lovelace">
+                  <div class="card-body">
+                    <span class="badge text-bg-secondary">Negocios</span>
+                    <span class="badge text-bg-danger">Startups</span>
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                       Sapiente explicabo animi quasi voluptate facere vero provident soluta corporis
+                        vel qui molestiae numquam iste necessitatibus, quia unde dignissimos repellat totam error.
+                    </p>
+                  </div>
+                  <div class="card-footer">
+                    <!-- <small class="text-muted">Last updated 3 mins ago</small> -->
+                  </div>
                 </div>
               </div>
             </div>
@@ -269,5 +261,7 @@
           </footer>
         </main>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+        <script src="js/main.js"></script>
     </body>
 </html>

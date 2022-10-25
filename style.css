@@ -10,8 +10,12 @@
     margin: 0;
     padding: 0;
 }
+p{
+    padding: 0;
+    margin: 0!important;
+}
 img.icon{
-    width: 25%;
+    max-width: 25%;
     height: 50%
 }
 .subtitle{
@@ -68,4 +72,9 @@ img.icon{
 
  .carousel-item  { 
     height: 100%;
+ }
+
+ /*estilos página ventas*/
+ .color-lima{
+    color: #96c93e !important;
  }
