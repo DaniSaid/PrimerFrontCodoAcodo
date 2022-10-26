@@ -100,8 +100,8 @@
                 </div>
                 <div class="col-6">
                   <label for="Categoria">Categoria</label>
-                  <select class="form-select" aria-label="Default select example">
-                    <option selected>---</option>
+                  <select class="form-select" id="categorias" aria-label="Default select example" onChange="update()">
+                    <option value="0">---</option>
                     <option value="1">Estudiante</option>
                     <option value="2">Trainee</option>
                     <option value="3">Junior</option>
@@ -109,7 +109,7 @@
                 </div>
               </div>
               <div class="row px-2 mt-4">
-                <div class="alert alert-primary" role="alert">
+                <div class="alert alert-primary" id="total" role="alert">
                   Total a Pagar: $
                 </div>
               </div>
