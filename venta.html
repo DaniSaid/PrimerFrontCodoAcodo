@@ -96,11 +96,11 @@
               <div class="row g-3 mt-2">
                 <div class="col-6">
                   <label for="Cantidad">Cantidad</label>
-                  <input type="text" name="Cantidad" id="cantidad" class="form-control" placeholder="Cantidad" aria-label="cantidad de tickets">
+                  <input type="number" name="Cantidad" id="cantidad" class="form-control" placeholder="Cantidad" aria-label="cantidad de tickets">
                 </div>
                 <div class="col-6">
                   <label for="Categoria">Categoria</label>
-                  <select class="form-select" id="categorias" aria-label="Default select example" onChange="update()">
+                  <select class="form-select" id="categorias" aria-label="Default select example" onChange="categoria()">
                     <option value="0">---</option>
                     <option value="1">Estudiante</option>
                     <option value="2">Trainee</option>
@@ -109,8 +109,8 @@
                 </div>
               </div>
               <div class="row px-2 mt-4">
-                <div class="alert alert-primary" id="total" role="alert">
-                  Total a Pagar: $
+                <div class="alert alert-primary" role="alert">
+                  <h5>Total a Pagar: $<span id="total">200</span></h5>
                 </div>
               </div>
               <div class="row g-3 mb-3">
@@ -118,7 +118,7 @@
                   <button type="button" class="btn btn-custom-color w-100">Borrar</button>
                 </div>
                 <div class="col-6">
-                  <button type="button" class="btn btn-custom-color w-100">Resumen</button>
+                  <button type="button" class="btn btn-custom-color w-100" id="btnResumen">Resumen</button>
                 </div>
               </div>      
             </form>

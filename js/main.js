@@ -32,37 +32,49 @@ const valorTicket = 200;
 const descEstudiante = valorTicket * 0.8;
 const descTrainee = valorTicket * 0.5;
 const descJunior = valorTicket * 0.15;
-let descuento = 0;
-let total = 0;
+const valorTotal = document.getElementById("total");
+const select = document.getElementById("categorias");
+const cantidad = document.getElementById("cantidad");
+let num = 0
+let valorBruto = valorTicket;
 
-function update(){
-    let select = document.getElementById("categorias");
-    let option = select.options[select.selectedIndex];    
-    console.log("valor: " + option.text);
-    return option.text;
+/*al hacer click en el boton de resumen que tiene el id="btnResumen" se ejecuta la funcion totalAPagar*/
+btnResumen.addEventListener("click", totalAPagar);
+
+/*obtiene la categoria seleccionada en el formulario*/
+function categoria(){ 
+    let option = select.options[select.selectedIndex]; 
+    return option.value;
 }
 
-function obtenerTotalAPagar(){
-    switch(_categoria){
-        case Estudiante:
-            descuento = descEstudiante;
-            total = valorTicket + descuento;
-            console.log("el descuento es de: " + descuento);
-            console.log("total a pagar: " + total);
-        break
-
-        case Trainee:
-            descuento = descTrainee;
-            total = valorTicket + descuento;
-            console.log("el descuento es de: " + descuento);
-            console.log("total a pagar: " + total);
-        break
-        
-        case Junior:
-            descuento = descJunior;
-            total = valorTicket + descuento;
-            console.log("el descuento es de: " + descuento);
-            console.log("total a pagar: " + total);
-        break
+/*calcula el valor bruto de la compra segun la cantidad de tickets ingresada*/
+function totalBruto(){
+    if( cantidad.value == null){
+        valorBruto = 0;
+    }else{
+        valorBruto = valorTicket * cantidad.value;
     }
 }
+
+/*devuelve el valor neto de la compra tomando en cuenta los descuentos por categoria*/
+function totalAPagar(){
+    totalBruto();
+    if( categoria() == 0 || valorBruto == 0){
+        valorTotal.textContent = valorBruto;
+    }else{
+        if(categoria() !=2 && categoria() !=3)
+        {   
+            valorTotal.textContent =  valorBruto - descEstudiante;
+            console.log("la categoria Estudiante fue seleccionada");
+        }
+        if(categoria() != 1 && categoria() != 3){
+            valorTotal.textContent =  valorBruto - descTrainee;
+            console.log("la categoria Trainee fue seleccionada");
+        }
+        if(categoria() != 1 && categoria() != 2){
+            valorTotal.textContent =  valorBruto - descJunior;
+            console.log("la categoria Junior fue seleccionada");       
+        }
+    }
+}
+
