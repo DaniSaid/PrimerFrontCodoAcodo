@@ -29,14 +29,15 @@ window.scrollTo
 */
 
 const valorTicket = 200;
-const descEstudiante = valorTicket * 0.8;
-const descTrainee = valorTicket * 0.5;
-const descJunior = valorTicket * 0.15;
+const descEstudiante = 0.8;
+const descTrainee = 0.5;
+const descJunior = 0.15;
 const valorTotal = document.getElementById("total");
 const select = document.getElementById("categorias");
 const cantidad = document.getElementById("cantidad");
-let num = 0
 let valorBruto = valorTicket;
+let num = 0
+
 
 /*al hacer click en el boton de resumen que tiene el id="btnResumen" se ejecuta la funcion totalAPagar*/
 btnResumen.addEventListener("click", totalAPagar);
@@ -63,16 +64,17 @@ function totalAPagar(){
         valorTotal.textContent = valorBruto;
     }else{
         if(categoria() !=2 && categoria() !=3)
-        {   
-            valorTotal.textContent =  valorBruto - descEstudiante;
+        {   console.log(valorBruto);
+            valorTotal.textContent =  valorBruto - valorBruto * descEstudiante;
+
             console.log("la categoria Estudiante fue seleccionada");
         }
         if(categoria() != 1 && categoria() != 3){
-            valorTotal.textContent =  valorBruto - descTrainee;
+            valorTotal.textContent =  valorBruto - valorBruto * descTrainee;
             console.log("la categoria Trainee fue seleccionada");
         }
         if(categoria() != 1 && categoria() != 2){
-            valorTotal.textContent =  valorBruto - descJunior;
+            valorTotal.textContent =  valorBruto - valorBruto * descJunior;
             console.log("la categoria Junior fue seleccionada");       
         }
     }
